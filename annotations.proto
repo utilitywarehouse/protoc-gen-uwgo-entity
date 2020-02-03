@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package uw.entity;
+
+option go_package = "protos";
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+  bool ignore = 75050;
+}
+
+extend google.protobuf.FieldOptions {
+  bool identifier = 75160;
+}
